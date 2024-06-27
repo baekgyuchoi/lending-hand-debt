@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+datasource db {
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model LendingHandKeywords {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  tagId     Int
+  level     Int
+  used      Boolean  @default(false)
+
+  @@index([tagId], map: "_LendingHandKeywords_tagId_index")
+}
+
+model LendingHandArticles {
+  id          Int               @id @default(autoincrement())
+  title       String            @unique
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  authorId    Int?
+  keywordId   Int
+  content     String?           @db.Text
+  has_content Boolean           @default(false)
+  title_slug  String            @unique
+  author      LendingHandAuthors? @relation(fields: [authorId], references: [id])
+  tags        LendingHandTags[]
+
+  @@index([authorId], map: "_LendingHandArticles_authorId_index")
+  @@index([has_content], map: "_LendingHandArticles_has_content_index")
+  @@index([keywordId], map: "_LendingHandArticles_keywordId_index")
+}
+
+model LendingHandTags {
+  id        Int                 @id @default(autoincrement())
+  name      String              @unique
+  createdAt DateTime            @default(now())
+  updatedAt DateTime            @updatedAt
+  slug      String              @unique
+  articles  LendingHandArticles[]
+}
+
+model LendingHandAuthors {
+  id          Int                 @id @default(autoincrement())
+  name        String
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  prompt      String              @db.Text
+  description String              @db.Text
+  slug        String              @unique
+  articles    LendingHandArticles[]
+}
