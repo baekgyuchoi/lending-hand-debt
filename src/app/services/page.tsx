@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import ComparisonChart from '@/components/services/comparison-chart';
-import ServiceMatrix from '@/components/services/service-matrix';
+import ComparisonChart from '../../components/services/comparison-chart';
+import ServiceMatrix from '../../components/services/service-matrix';
 import Link from 'next/link';
 
 // You'll need to create these components

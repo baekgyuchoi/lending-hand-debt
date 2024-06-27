@@ -10,7 +10,7 @@ import {
   } from '@mantine/core';
 import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import classes from './ContactUs.module.css';
-import { ContactIconsList } from '@/components/contact/ContactIcons';
+import { ContactIconsList } from '../../components/contact/ContactIcons';
   
 const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
   
