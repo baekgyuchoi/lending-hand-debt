@@ -1,6 +1,6 @@
 
-import ArticleContentContainer from "@/components/blog/ArticleContentContainer";
-import prisma from "@/lib/helper/db";
+import ArticleContentContainer from "../../../components/blog/ArticleContentContainer";
+import prisma from "../../../lib/helper/db";
 import { Metadata } from "next";
 
 

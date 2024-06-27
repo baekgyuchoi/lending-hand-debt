@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import NavBar from "@/components/nav/NavBar";
-import { FloatingNavDemo } from "@/components/nav/FloatingNavDemo";
-import '@mantine/core/styles.css'
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
-import { FooterLinks } from "@/components/nav/FooterLinks";
-import { MobileFooter } from "@/components/nav/MobileFooter";
+import { FloatingNavDemo } from "../components/nav/FloatingNavDemo";
+import { FooterLinks } from "../components/nav/FooterLinks";
+import { MobileFooter } from "../components/nav/MobileFooter";
+import NavBar from "../components/nav/NavBar";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
