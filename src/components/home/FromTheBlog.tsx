@@ -1,4 +1,4 @@
-import prisma from "@/lib/helper/db"
+import prisma from "../../lib/helper/db"
 
 const posts = [
     {
