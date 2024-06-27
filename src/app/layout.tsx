@@ -5,6 +5,8 @@ import { FloatingNavDemo } from "../components/nav/FloatingNavDemo";
 import { FooterLinks } from "../components/nav/FooterLinks";
 import { MobileFooter } from "../components/nav/MobileFooter";
 import NavBar from "../components/nav/NavBar";
+import '../styles/globals.css';
+
 
 
 

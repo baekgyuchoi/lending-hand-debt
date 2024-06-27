@@ -18,8 +18,6 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center gap-12 w-full lg:w-2/3 my-12">
         <HowItWorks />
 
-        {/* <InfiniteMovingCardsDemo /> */}
-
         <FromTheBlog />
         
         <FaqWithImage />
