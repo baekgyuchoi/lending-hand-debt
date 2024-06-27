@@ -1,5 +1,5 @@
+
 import ArticleContentContainer from "@/components/blog/ArticleContentContainer";
-import SuggestedArticlesContainer from "@/components/blog/SuggestedArticlesContainer";
 import prisma from "@/lib/helper/db";
 import { Metadata } from "next";
 

@@ -1,4 +1,4 @@
-import { Card, CardDescription, CardTitle } from '@/components/ui/card';
+
 import { TracingBeam } from '@/components/ui/tracing-beam';
 import Image from 'next/image';
 import React from 'react';
@@ -44,10 +44,10 @@ const Page = () => {
                                     className="w-16 md:w-36 h-16 md:h-36 mb-1 rounded-box"
                                 />
                                 <div className="flex flex-col items-start md:items-center justify-center">
-                                    <CardTitle className="text-lg md:text-2xl">Reliability</CardTitle>
-                                    <CardDescription className="mb-1 md:mb-3 text-left md:text-center">
+                                    <div className="text-lg md:text-2xl">Reliability</div>
+                                    <div className="mb-1 md:mb-3 text-left md:text-center">
                                         We are 100% committed to the quality and integrity of our services from enrollment to customer support.
-                                    </CardDescription>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -61,10 +61,10 @@ const Page = () => {
                                     className="w-16 md:w-36 h-16 md:h-36 mb-1 rounded-box"
                                 />
                                 <div className="flex flex-col items-start md:items-center justify-center">
-                                    <CardTitle className="text-lg md:text-2xl">Consistency</CardTitle>
-                                    <CardDescription className="mb-1 md:mb-3 text-left md:text-center">
+                                    <div className="text-lg md:text-2xl">Consistency</div>
+                                    <div className="mb-1 md:mb-3 text-left md:text-center">
                                         As a performance-based debt settlement company, we are dedicated to delivering consistency and offloading risk from our clients. No fees are collected until our clients are satisfied. 
-                                    </CardDescription>
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -78,10 +78,10 @@ const Page = () => {
                                     className="w-16 md:w-36 h-16 md:h-36 mb-1 rounded-box"
                                 />
                                 <div className="flex flex-col items-start md:items-center justify-center">
-                                    <CardTitle className="text-lg md:text-2xl">Drive</CardTitle>
-                                    <CardDescription className="mb-1 md:mb-3 text-left md:text-center">
+                                    <div className="text-lg md:text-2xl">Drive</div>
+                                    <div className="mb-1 md:mb-3 text-left md:text-center">
                                         We are driven by a passion to help alleviate debt and liberate our clients from credit card burdens, propelling them toward financial freedom.
-                                    </CardDescription>
+                                    </div>
                                 </div>
                                 
                             </div>

@@ -1,4 +1,4 @@
-import { ContactUs } from "@/components/contact/ContactUs";
+import { ContactUs } from "../../components/contact/ContactUs";
 
 
 
