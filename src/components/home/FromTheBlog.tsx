@@ -121,8 +121,7 @@ const posts = [
     })
     return articles
   }
-  
-  export default async function FromTheBlog() {
+async function FromTheBlog() {
     const posts = await getPosts()
     return (
       <div className="bg-white py-24 sm:py-32">
@@ -174,3 +173,5 @@ const posts = [
       </div>
     )
   }
+
+export default FromTheBlog;

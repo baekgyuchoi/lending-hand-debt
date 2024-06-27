@@ -20,7 +20,7 @@ export default function Home() {
 
         {/* <InfiniteMovingCardsDemo /> */}
 
-        <FromTheBlog />
+
         
         <FaqWithImage />
         </div>
