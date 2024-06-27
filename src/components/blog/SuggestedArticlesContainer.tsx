@@ -1,6 +1,6 @@
 import { SeparatorHorizontal } from 'lucide-react';
 import React from 'react';
-import prisma from '@/lib/helper/db';
+import prisma from '../../lib/helper/db';
 interface SuggestedArticlesContainerProps {
     article: any;
 }
