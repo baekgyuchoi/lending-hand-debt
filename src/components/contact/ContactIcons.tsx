@@ -27,9 +27,9 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 
 const MOCKDATA = [
   { title: 'Email', description: 'admin@lendinghanddebt.com', icon: IconAt },
-  { title: 'Phone', description: '+1 (888) 123 1234', icon: IconPhone },
+  { title: 'Phone', description: '+1 (833) 711 4196', icon: IconPhone },
   { title: 'Address', description: '2108 N ST STE N   SACRAMENTO, CA 95816', icon: IconMapPin },
-  { title: 'Working hours', description: '8 a.m. – 11 p.m.', icon: IconSun },
+  { title: 'Working hours', description: '9 a.m. – 5 p.m. Pacific', icon: IconSun },
 ];
 
 export function ContactIconsList() {

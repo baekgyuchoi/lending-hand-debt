@@ -37,7 +37,7 @@ export function SliderInput(props: SliderInputProps) {
         min={0}
         max={8000}
         id='debtAmount'
-        className={" bg-white w-full h-10 px-4 py-10 text-2xl lg:text-4xl  rounded-md text-gray-700"}
+        className={" bg-white w-full h-10 px-4 py-10 text-2xl lg:text-4xl  rounded-md text-gray-800"}
       />
       <Slider
         max={110000}

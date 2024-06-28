@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <section className="flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center my-12 w-full">
+        <div className="flex flex-col items-center justify-center my-12 gap-4 md:gap-0  w-full">
           <FlipWordsDemo />
 
           <DebtFormContainer />
