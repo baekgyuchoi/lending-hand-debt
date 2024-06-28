@@ -4,6 +4,7 @@ import { FaqWithImage } from "../components/home/FaqWithImage";
 import { FlipWordsDemo } from "../components/home/FlipWordsDemo";
 import FromTheBlog from "../components/home/FromTheBlog";
 import { HowItWorks } from "../components/home/HowItWorks";
+import './globals.css';
 
 
 export default function Home() {
