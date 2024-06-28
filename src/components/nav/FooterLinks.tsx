@@ -2,31 +2,32 @@
 import { Text, Container } from '@mantine/core';
 import classes from './FooterLinks.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const data = [
   {
     title: 'Home',
     links: [
-      { label: 'Debt Calculator', link: '#' },
-      { label: 'How It Works', link: '#' },
-      { label: 'FAQ', link: '#' },
+      { label: 'Debt Calculator', link: '/#' },
+      { label: 'How It Works', link: '/#how_it_works' },
+      { label: 'FAQ', link: '/#faq' },
     ],
   },
   {
     title: 'About',
     links: [
-      { label: 'What Is Lending Hand Debt', link: '#' },
-      { label: 'Why Us', link: '#' },
-      { label: 'Name', link: '#' },
+      { label: 'What Is Lending Hand Debt', link: '/about#' },
+      { label: 'Why Us', link: '/about#why_us' },
+      
      
     ],
   },
   {
     title: 'Other',
     links: [
-      { label: 'Services', link: '#' },
-      { label: 'Blog', link: '#' },
-      { label: 'Contact Us', link: '#' },
+      { label: 'Services', link: '/services' },
+      { label: 'Blog', link: '/blog' },
+      { label: 'Contact Us', link: '/contact' },
     ],
   },
 ];
@@ -34,15 +35,15 @@ const data = [
 export function FooterLinks() {
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text<'a'>
+      <Link
         key={index}
         className={classes.link}
-        component="a"
+    
         href={link.link}
-        onClick={(event) => event.preventDefault()}
+        
       >
         {link.label}
-      </Text>
+      </Link>
     ));
 
     return (

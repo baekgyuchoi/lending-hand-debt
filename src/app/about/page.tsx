@@ -26,7 +26,7 @@ const Page = () => {
                     </p>
                 </div>
             </div>
-            <div className="container mx-auto py-8 flex flex-col items-center justify-center gap-10 mb-32">
+            <div id={"why_us"} className="container mx-auto py-8 flex flex-col items-center justify-center gap-10 mb-32">
                 <h2 className="text-4xl text-gray-700 font-bold text-center mb-4">Why Choose Lending Hand Debt?</h2>
                 
                 

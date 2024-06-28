@@ -17,11 +17,15 @@ export default function Home() {
           <DebtFormContainer />
         </div>
         <div className="flex flex-col items-center justify-center gap-12 w-full lg:w-2/3 my-12">
-        <HowItWorks />
-
-        <FromTheBlog />
-        
-        <FaqWithImage />
+          <div id={'how_it_works'}>
+            <HowItWorks />
+          </div>
+          
+          
+          <FromTheBlog />
+          <div id={'faq'}>
+            <FaqWithImage />
+          </div>
         </div>
 
       </section>
