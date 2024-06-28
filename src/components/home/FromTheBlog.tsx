@@ -124,7 +124,7 @@ const posts = [
 export default async function FromTheBlog() {
     const posts = await getPosts()
     return (
-      <div className="bg-white py-24 sm:py-32 w-full">
+      <div className="bg-white py-24 sm:py-32 ">
         <div className="mx-auto px-6 ">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl">From the blog</h2>
