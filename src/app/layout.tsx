@@ -6,6 +6,7 @@ import { FooterLinks } from "../components/nav/FooterLinks";
 import { MobileFooter } from "../components/nav/MobileFooter";
 import NavBar from "../components/nav/NavBar";
 import './globals.css';
+import '@mantine/core/styles.css';
 
 
 

@@ -1,6 +1,5 @@
 'use client'
-import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
-import { Loader2 } from 'lucide-react';
+import { Text, Container } from '@mantine/core';
 import classes from './FooterLinks.module.css';
 import Image from 'next/image';
 
