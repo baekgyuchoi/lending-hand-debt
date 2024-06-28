@@ -73,7 +73,7 @@ export default async function ArticlePage({ params }: { params: { title_slug: st
    
 
     return (
-        <div className="flex flex-col items-center justify-center gap-10 mb-20">
+        <div className="flex flex-col items-center justify-center gap-10 mb-20 max-w-8xl">
             
             <ArticleContentContainer tags={tags} tag_slug={article.tags[0].slug} updated_at={article.updatedAt} title={article.title} content={article.content}  author_bio={author?.description!} author_image="/logo.png" author_name={author!.name}  />
             {/* <SuggestedArticlesContainer article={article} /> */}
