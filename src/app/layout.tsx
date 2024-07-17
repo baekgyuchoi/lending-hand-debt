@@ -4,6 +4,7 @@ import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { FloatingNavDemo } from "../components/nav/FloatingNavDemo";
 import { FooterLinks } from "../components/nav/FooterLinks";
 import { MobileFooter } from "../components/nav/MobileFooter";
+import { Analytics } from '@vercel/analytics/react';
 import NavBar from "../components/nav/NavBar";
 import './globals.css';
 import '@mantine/core/styles.css';
@@ -40,6 +41,7 @@ export default function RootLayout({
             <MobileFooter />
           </div>
         </MantineProvider>
+        <Analytics />
       </body>
     </html>
   );
