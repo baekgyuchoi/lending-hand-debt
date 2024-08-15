@@ -15,7 +15,7 @@ import '@mantine/core/styles.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lending Hand Debt",
+  title: "Lending Hand Debt, LLC. Debt relief specialists",
   description: "With the experience and knowledge of the field's elites, we match our clients to trusted debt relief programs.",
 };
 
