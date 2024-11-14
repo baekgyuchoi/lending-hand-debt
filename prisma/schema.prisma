@@ -13,6 +13,20 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model ETechLeads {
+  id      Int     @id @default(autoincrement())
+  first_name  String
+  last_name   String
+  phone       String
+  email       String
+  timestamp   DateTime
+  address     String
+  city        String
+  state       String
+  zip         String
+  dob         DateTime
+}
+
 model LendingHandKeywords {
   id        Int      @id @default(autoincrement())
   name      String   @unique
