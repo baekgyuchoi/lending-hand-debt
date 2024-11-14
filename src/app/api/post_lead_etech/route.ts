@@ -1,6 +1,5 @@
 
 
-
 export async function POST(request: Request) {
 
     const data = await request.json()
@@ -11,8 +10,8 @@ export async function POST(request: Request) {
           method: 'POST',
           headers: {
             accept: 'application/json',
-            authid: process.env.RELX_AUTH_KEY,
-            authsecret: process.env.RELX_AUTH_SECRET,
+            authid: process.env.RELX_AUTH_KEY ?? "",
+            authsecret: process.env.RELX_AUTH_SECRET ?? "",
             'content-type': 'application/json'
           },
           body: JSON.stringify({
